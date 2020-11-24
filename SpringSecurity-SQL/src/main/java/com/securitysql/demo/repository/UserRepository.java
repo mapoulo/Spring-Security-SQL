@@ -6,4 +6,6 @@ import com.securitysql.demo.model.User;
 
 public interface UserRepository extends JpaRepository<User, Integer>{
 
+	User findByUsernae(String username);
+
 }
